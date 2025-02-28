@@ -1,0 +1,17 @@
+name: Scheduled Task
+
+on:
+  schedule:
+    # Runs every 5 minutes
+    - cron: '*/5 * * * *'
+
+jobs:
+  run-scheduled-task:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Run your task
+        run: |
+          echo "Running scheduled task"
+          # Add your commands here
