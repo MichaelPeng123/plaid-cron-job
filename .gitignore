@@ -1,7 +1,1 @@
 # Files that Git should ignore
-
-*.data
-*.o
-*.tgz
-*~
-randall
